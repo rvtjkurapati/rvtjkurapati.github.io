@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="play.html">PLAY</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Emoji Selection Container -->
+    <div id="emoji-container-wrapper">
+      <div id="emoji-container" class="emoji-container">
+        <!-- Different emoji options representing emotions -->
+        <div class="emoji" data-emotion="happy">
+          <span>😊</span>
+          <span class="tooltip">Happy</span>
+        </div>
+        <div class="emoji" data-emotion="sad">
+          <span>😢</span>
+          <span class="tooltip">Sad</span>
+        </div>
+        <div class="emoji" data-emotion="calm">
+          <span>😌</span>
+          <span class="tooltip">Calm</span>
+        </div>
+        <div class="emoji" data-emotion="energetic">
+          <span>💪</span>
+          <span class="tooltip">Energetic</span>
+        </div>
+        <div class="emoji" data-emotion="hopeful">
+          <span>🌈</span>
+          <span class="tooltip">Hopeful</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <div id="instructions" class="instructions">
+      <p><b>*INSTRUCTIONS*</b></p>
+      <p>1) Pick an emotion 🤔</p>
+      <p>2) Hit "Listen Now" 🎶</p>
+      <p>3) Enjoy the jam!🕺💃</p>
+      <p>4) Repeat! 🔁 🔁 🔁</p>
+    </div>
+
+    <!-- Song suggestion display area -->
+    <div id="song-suggestion-container" class="song-suggestion">
+      <p id="song-name"></p>
+      <button id="listen-now" style="display: none">Listen Now</button>
+    </div>
+
+    <!-- YouTube Embedded Player -->
+    <div id="youtube-player" class="youtube-player" style="display: none">
+      <!-- Embedded YouTube video will be inserted dynamically -->
+    </div>
+  </body>
+</html>
